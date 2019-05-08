@@ -37,3 +37,18 @@ These HTTP method convenience functions act just like request() but with a defau
 - 使用者列表/GET/users_list
 - 更改使用者/PATCH/update_user
 
+
+```javascript
+const request = require('request');
+
+request.patch({
+  url: 'https://reqres.in/api/users',
+  form: { 
+      Name: 'prochini' }
+ },
+
+(error, response, body) => {
+  console.log(response.statusCode);
+  console.log(body)
+},);
+```
