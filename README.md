@@ -1,5 +1,5 @@
 # JSON
-```
+```Javascript
 const request = require('request');
 request(
     'https://reqres.in/api/users/2', 
