@@ -19,7 +19,7 @@ console.log(JSON.stringify(obj))
 ```
 
 
-#request.METHOD()
+# request.METHOD()
 These HTTP method convenience functions act just like request() but with a default method already set for you:
 
 - request.get(): Defaults to method: "GET".
