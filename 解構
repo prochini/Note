@@ -1,4 +1,4 @@
-
+```js
 const people = [
   {
     name: 'Mike Smith',
@@ -13,3 +13,4 @@ const people = [
 let [{family:{sister}}] =people
 console.log(sister)
 //Samantha Smith
+```
