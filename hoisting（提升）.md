@@ -44,6 +44,15 @@ var test = function (){
 ```
 
 ```js
+let a  = 'global'
+function test() {
+
+  console.log(a)
+  var a = 'local' //undefined
+  let a = 'local' // a is not defined
+}
+
+test()
 ```
 
 ```js
