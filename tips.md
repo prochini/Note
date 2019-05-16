@@ -48,7 +48,6 @@ if(value === ""){
 
 // 後續其他動作
 
-```js
 # Good
 if(value === "") return alert("欄位不得為空");
 // 後續其他動作
