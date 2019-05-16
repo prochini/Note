@@ -47,6 +47,7 @@ if(value === ""){
 }
 
 // 後續其他動作
+
 ```js
 # Good
 if(value === "") return alert("欄位不得為空");
@@ -66,6 +67,7 @@ document.getElementById("dom").style.color = '#f00';
 document.getElementById("dom").classList.add('textRed');
 document.getElementById("dom").classList.remove('textRed');
 ```
+
 # top5. 簡單的動畫不要用 JavaScript 函式庫
 請善用 css3 的 transition，動態也比較順暢
 初學者學習到一些像是 jquery 的 javascript 函式庫時候就會喜歡把所有的動態交給函式庫來做，例如hover一個按鈕改變顏色或是選單跑出來等等，但是這樣在行動裝式上面會很卡不流暢，所以像是簡單的動態都其實可以交給css3 的transition來處理，會順暢很多。
