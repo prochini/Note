@@ -33,10 +33,56 @@ doHomework('programmimg', alertFinished);//把function當作引數帶入另homew
 ```
 
 ```js
+window.addEventListener('load', init, false);         //新增事件監聽器
+
+
+//多次呼叫 addEventListener() 方法，就能為相同元素的同一事件增加多個事件監聽器
+window.addEventListener('load', process, false);
+window.addEventListener('load', calculate, false);
+
+
+window.removeEventListener('load', process, false);   //刪除事件監聽器，此時只會執行 calculate() 函數
 ```
 
 ```js
 ```
+想～簡簡單單愛：超簡單留言板
+https://ithelp.ithome.com.tw/articles/10187442
 
 ```js
 ```
+setRequestHeader('Content-type', 'application/x-www-form-urlencoded')
+
+http = XMLHttpRequest {onreadystatechange: ƒ, readyState: 1, timeout: 0, withCredentials: false, upload: XMLHttpRequestUpload, …}, params = "content=2"
+
+http = XMLHttpRequest {onreadystatechange: ƒ, readyState: 1, timeout: 0, withCredentials: false, upload: XMLHttpRequestUpload, …}, params = "content=2"
+
+http = XMLHttpRequest {onreadystatechange: ƒ, readyState: 1, timeout: 0, withCredentials: false, upload: XMLHttpRequestUpload, …}, params = "content=2"
+
+function getComment() {
+  const request = new XMLHttpRequest();
+  const container = document.querySelector('.wrapper');
+  request.open('GET', 'https://lidemy-book-store.herokuapp.com/posts?_limit=20&_sort=id&_order=desc', true);
+  request.send(null);
+  if (request.status >= 200 && request.status < 400) {
+    const response = request.responseText;
+    const json = JSON.parse(response);
+    for (let i = 0; i < json.length; i += 1) {
+      const div = document.createElement('div');
+      div.innerHTML = `
+          <img class="avatar"src="https://i.imgur.com/y6bVt3Y.png" alt="avatar" width="50vmin" height="50vmin">
+          <article>
+              <h1>${json[i].id}</h1>
+              <p>${json[i].content}</p>
+          </article>
+          `;
+      div.classList.add('message');
+      container.appendChild(div);
+    }
+  } else {
+    alert(request.status);
+  }
+  request.onerror = () => {
+    alert('error?');
+  };
+}
