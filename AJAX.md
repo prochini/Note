@@ -27,33 +27,30 @@
   <script src="test.js"></script>
 </body>
 
-const request = new XMLHttpRequest()
-const container = document.querySelector('.app')
-request.addEventListener('load',function(){
+const request = new XMLHttpRequest();
+const container = document.querySelector('.app');
+request.addEventListener('load', () => {
   if (request.status >= 200 && request.status < 400) {
-    const response = request.responseText
+    const response = request.responseText;
     const json = JSON.parse(response);
-    const users = json.data
-    for (i = 0; i < users.length; i += 1){
-      const div = document.createElement('div')
-      div.classList.add('profile')
-      div.innerHTML=`
+    const users = json.data;
+    for (let i = 0; i < users.length; i += 1) {
+      const div = document.createElement('div');
+      div.classList.add('profile');
+      div.innerHTML = `
       <div class="first_name">${users[i].first_name}</div>
       <div class="last_name">${users[i].last_name}</div>
       <img src="${users[i].avatar}" alt="avatar">
-      `
-      container.appendChild(div)
-
+      `;
+      container.appendChild(div);
     }
-
   } else {
-    console.log(request.status)
-  } 
-}
-)
-request.onerror = function(){
-  console.log('error')
-}
+    console.log(request.status);
+  }
+});
+request.onerror = () => {
+  console.log('error');
+};
 request.open('GET', 'https://reqres.in/api/users', true);
 
 request.send(null);
