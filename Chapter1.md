@@ -10,15 +10,18 @@
 - IBM
 - 1937 Turing machine Enigma 密碼
 - 模仿遊戲 (The Imitation Game)
-- 1946 真空管 vacume tube
+- 1946 真空管 vacuum tube
+- (ENIAC:設計用於計算大砲投射地點，每秒可執行1900次加法)
 - 1952 Grace compiler 編譯器
 - 1956 電晶體
 - 1957 IBM 商用編譯器
 - 1964 IBM 積體電路 IC 
 - 關鍵少數 Hidden Figures 寫程式教機器去運算
-- IBM 支援 NSA 1MB 打洞 -> 放進讀卡機 
+- (calculate the orbit for project Mercury-which is the first success attempt for human to get into Earth's orbit)
+- IBM 支援 NSA 1MB 打洞(fortran) -> 放進讀卡機 
 - 1962 第一款數字計算機遊戲 MIT steve Russell spacewar
-- 1972 Dennsi Ritchie 開發 C 語言 低階程式語言 接近機器語言
+- 1972 Dennis Ritchie 開發 C 語言 低階程式語言 接近機器語言
+- (based on Ken Thompson's work on B)
 - 1975 第一部個人電腦 IBM 第一台雷射印表機
 - 1976 supercomputer IBM 噴墨印表機 
 - 1977 steve jobs & steve Wozniak 蘋果 2 號
