@@ -97,7 +97,7 @@ test (123)
 1. function
 2. arguments
 3. vars
-
+4.
 ```js
 function test(a){ // 宣告參數 a
    var a  ; //我想要宣告(被忽略)
