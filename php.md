@@ -29,7 +29,7 @@ echo $a . $b;
 		echo"pass";
 	} else {
 		echo"fail";
-    }
+    }123
 ```
 
 - for 迴圈
