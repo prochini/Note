@@ -54,4 +54,4 @@ When passed a key name and value, will add that key to the storage, or update th
 
 ```
 ## Window​.session​Storage
-session​Storage 裡面儲存的值會在頁面關閉後清除
+session​Storage 裡面儲存的值會在頁面關閉後清除 the content in the storage will be cleared once you close the page.
