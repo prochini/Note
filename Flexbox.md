@@ -17,7 +17,7 @@
 - flex-wrap
 nowrap：不換行
 wrap：換行
-wrap-reverse：換行但方向相反
+wrap-reverse：換行but方向相反
 ```css
 #container {
      flex-wrap: nowrap | wrap | wrap-reverse;
